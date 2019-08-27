@@ -8,6 +8,7 @@ import { MaterialModule } from './material.module';
 import { TelaVideoComponent } from './tela-video/tela-video.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { ComunicationService } from './service/comunication.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [ ComunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
