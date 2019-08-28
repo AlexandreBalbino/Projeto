@@ -14,7 +14,9 @@ export class TelaVideoComponent implements OnInit {
   }
 
   private function(): void{
-    console.log("teste")
+   this.comunicationService.CallBackEnd().subscribe( valor => {
+     console.log(valor);
+   })
   }
 
 }

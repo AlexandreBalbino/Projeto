@@ -1,13 +1,14 @@
 package com.backend.backend.controller;
 
 import com.backend.backend.model.Response;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.net.http.HttpResponse;
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
+
 public class ComunicaoController {
 
     @RequestMapping(value = "/",  method = RequestMethod.GET, produces = "application/json")
