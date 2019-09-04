@@ -11,10 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ComunicationService } from './service/comunication.service';
 
+import { FileUploadModule } from 'ng2-file-upload';
+
 @NgModule({
   declarations: [
     AppComponent,
-    TelaVideoComponent
+    TelaVideoComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { ComunicationService } from './service/comunication.service';
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FileUploadModule
   ],
   providers: [ ComunicationService],
   bootstrap: [AppComponent]

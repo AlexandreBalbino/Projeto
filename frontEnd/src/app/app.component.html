@@ -312,17 +312,17 @@
   </mat-toolbar>
 
   <mat-drawer-container class="example-container" autosize fxFlex="grow">
-    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-      <div fxLayout="row wrap" fxLayoutAlign="start start" style="width: 100px">
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened >
+      <div fxLayout="row wrap" fxLayoutAlign="start start" >
         <div fxFlex="grow">
-          <button mat-raised-button color="primary" style="width: 100%">Inicio</button>
+          <button mat-raised-button color="primary" style="width: 100%"><mat-icon>home</mat-icon></button>
         </div>
       </div>
     </mat-drawer>
 
-    <div class="example-sidenav-content">
-      <div class="content" fxLayout="row wrap" role="main" fxFlex="grow">
-       <app-tela-video></app-tela-video>
+    <div class="example-sidenav-content" fxFill>
+      <div class="content" fxLayout="row wrap" role="main" fxFlex="grow" fxFill>
+       <app-tela-video fxFill></app-tela-video>
       </div>
     </div>
 

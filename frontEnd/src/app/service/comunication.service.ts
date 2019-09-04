@@ -22,7 +22,7 @@ export class ComunicationService {
   public CallBackEnd(){
     const  params = new  HttpParams();
 
-     return this.http.request("GET","http://127.0.0.1:8080/",{responseType:"json",params});    
+     return this.http.request("GET","http://backendalexandrebm.eu-west-1.elasticbeanstalk.com/",{responseType:"json",params});    
   }
 
 }
